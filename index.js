@@ -1,3 +1,3 @@
-import AnimatedWeatherIcon from './src/AnimatedWeatherIcon';
+import AnimatedWeatherIcon from './AnimatedWeatherIcon';
 
 export default AnimatedWeatherIcon;

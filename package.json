@@ -1,6 +1,6 @@
 {
   "name": "react-native-animated-weather-icons",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Animated Weather Icons for React Native",
   "main": "index.js",
   "scripts": {

@@ -5372,9 +5372,9 @@ react-is@^16.8.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-"react-native-animated-weather-icons@..\\react-native-animated-weather-icons-1.0.0.tgz":
-  version "1.0.0"
-  resolved "..\\react-native-animated-weather-icons-1.0.0.tgz#e3c8d5342cfb01406ac128ef21c70751a7f47423"
+"react-native-animated-weather-icons@..\\react-native-animated-weather-icons-1.0.1.tgz":
+  version "1.0.1"
+  resolved "..\\react-native-animated-weather-icons-1.0.1.tgz#ee9b04a13aba267c75bff4bd8fe71f6c893876a7"
 
 react-native-codegen@^0.0.6:
   version "0.0.6"
