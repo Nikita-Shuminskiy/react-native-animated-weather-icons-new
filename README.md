@@ -10,6 +10,10 @@ Animated SVG Weather Icons for React Native
 ````
 yarn add react-native-weather-icons
 ````
+or
+````
+npm i react-native-animated-weather-icons
+````
 
 ## Usage
 ````
