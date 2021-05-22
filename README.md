@@ -13,7 +13,7 @@ yarn add react-native-weather-icons
 
 ## Usage
 ````
-import AnimatedWeatherIcon from './animatedWeatherIcons/AnimatedWeatherIcon';
+import AnimatedWeatherIcon from 'react-native-animated-weather-icons';
 ````
 
 # Props
