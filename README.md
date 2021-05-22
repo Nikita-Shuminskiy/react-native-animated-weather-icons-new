@@ -45,5 +45,5 @@ const App: () => Node = () => {
 * Some other react-native issues that were causing errors.
 
 ### Possible future changes:
-* Specifying syles and colors
+* Specifying styles and colors
 * Allowing options for animation looping, pausing, etc.
