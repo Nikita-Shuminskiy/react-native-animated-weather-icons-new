@@ -1,61 +1,40 @@
 import React from 'react';
-import { 
-    RainIconAnimated, 
-    SnowIconAnimated, 
-    SunCloudIconAnimated,
-    SunIconAnimated,
-    ThunderIconAnimated,
-    WindCloudIconAnimated
+import {
+	RainIconAnimated,
+	SnowIconAnimated,
+	SunCloudIconAnimated,
+	SunIconAnimated,
+	ThunderIconAnimated,
+	WindCloudIconAnimated
 } from './AnimatedIcons/index';
 
+const AnimatedWeatherIcon = (props: Props) => {
+	const icons = {
+		'weather-rainy': <RainIconAnimated {...props} />,
+		'weather-sunny': <SunIconAnimated {...props} />,
+		'weather-lightning': <ThunderIconAnimated {...props} />,
+		'weather-cloudy': <SunCloudIconAnimated {...props} />,
+		'weather-snowy': <SnowIconAnimated {...props} />,
+		'weather-hail': <RainIconAnimated {...props} />,
+		'weather-fog': <SunCloudIconAnimated {...props} />,
+		'weather-windy': <WindCloudIconAnimated {...props} />
+	}
 
-export interface Props {
-    weatherName: string;
+	return icons[props.weatherName]
 }
-interface State {
-    weatherName: string;
+
+AnimatedWeatherIcon.defaultProps = {
+	weatherName: 'weather-sunny',
+	size: 50,
+	speed: 1,
+	color: 'black'
 }
 
-export default class AnimatedWeatherIcon extends React.Component<Props, State> {
-    constructor(props: Props) {
-        super(props);
-
-        this.state = {
-            weatherName: props.weatherName || 'weather-sunny',
-        };
-    }
-
-    render() {
-
-        var weatherIcon;
-        switch(this.props.weatherName) {
-            case 'weather-rainy':
-                weatherIcon = <RainIconAnimated />
-                break;
-            case 'weather-sunny':
-                weatherIcon = <SunIconAnimated />
-                break;
-            case 'weather-lightning':
-                weatherIcon = <ThunderIconAnimated />
-                break;
-            case 'weather-cloudy':
-                weatherIcon = <SunCloudIconAnimated />
-                break;
-            case 'weather-snowy':
-                weatherIcon = <SnowIconAnimated />
-                break;
-            case 'weather-hail':
-                weatherIcon = <RainIconAnimated />
-                break;
-            case 'weather-fog':
-                weatherIcon = <SunCloudIconAnimated />
-                break;
-            case 'weather-windy':
-                weatherIcon = <WindCloudIconAnimated />
-            default:
-                weatherIcon = <SnowIconAnimated />
-        }
-
-        return weatherIcon;
-    }
+interface Props {
+	weatherName: string,
+	color?: string,
+	size?: number,
+	speed?: number
 }
+
+export default AnimatedWeatherIcon

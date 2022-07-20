@@ -58,42 +58,42 @@ class SunIcon extends React.Component {
 		))
 
 		this.state.rayOneScale = this.state.rayTimer.interpolate({
-			inputRange:  [0, 0.1, 0.15, 0.8, 0.9, 1],
+			inputRange: [0, 0.1, 0.15, 0.8, 0.9, 1],
 			outputRange: [0.5, 0.5, 1, 1, 0.5, 0.5],
 		})
 
 		this.state.rayTwoScale = this.state.rayTimer.interpolate({
-			inputRange:  [0, 0.15, 0.2, 0.8, 0.9, 1],
+			inputRange: [0, 0.15, 0.2, 0.8, 0.9, 1],
 			outputRange: [0.5, 0.5, 1, 1, 0.5, 0.5],
 		})
 
 		this.state.rayThreeScale = this.state.rayTimer.interpolate({
-			inputRange:  [0, 0.2, 0.25, 0.8, 0.9, 1],
+			inputRange: [0, 0.2, 0.25, 0.8, 0.9, 1],
 			outputRange: [0.5, 0.5, 1, 1, 0.5, 0.5],
 		})
 
 		this.state.rayFourScale = this.state.rayTimer.interpolate({
-			inputRange:  [0, 0.25, 0.3, 0.8, 0.9, 1],
+			inputRange: [0, 0.25, 0.3, 0.8, 0.9, 1],
 			outputRange: [0.5, 0.5, 1, 1, 0.5, 0.5],
 		})
 
 		this.state.rayFiveScale = this.state.rayTimer.interpolate({
-			inputRange:  [0, 0.3, 0.35, 0.8, 0.9, 1],
+			inputRange: [0, 0.3, 0.35, 0.8, 0.9, 1],
 			outputRange: [0.5, 0.5, 1, 1, 0.5, 0.5],
 		})
 
 		this.state.raySixScale = this.state.rayTimer.interpolate({
-			inputRange:  [0, 0.35, 0.4, 0.8, 0.9, 1],
+			inputRange: [0, 0.35, 0.4, 0.8, 0.9, 1],
 			outputRange: [0.5, 0.5, 1, 1, 0.5, 0.5],
 		})
 
 		this.state.raySevenScale = this.state.rayTimer.interpolate({
-			inputRange:  [0, 0.4, 0.45, 0.8, 0.9, 1],
+			inputRange: [0, 0.4, 0.45, 0.8, 0.9, 1],
 			outputRange: [0.5, 0.5, 1, 1, 0.5, 0.5],
 		})
 
 		this.state.rayEightScale = this.state.rayTimer.interpolate({
-			inputRange:  [0, 0.45, 0.5, 0.8, 0.9, 1],
+			inputRange: [0, 0.45, 0.5, 0.8, 0.9, 1],
 			outputRange: [0.5, 0.5, 1, 1, 0.5, 0.5],
 		})
 	}
@@ -223,13 +223,13 @@ class SunIcon extends React.Component {
 							scale: this.state.growTimer
 						}],
 						opacity: this.state.growTimer.interpolate({
-							inputRange:  [0.5, 1],
+							inputRange: [0.5, 1],
 							outputRange: [0, 1],
 						}),
 					}}>
 					<Svg viewBox={'0 0 512 512'} height={this.props.size} width={this.props.size}>
 						<Path
-							fill={this.props.colour}
+							fill={this.props.color}
 							d={'M256,144c-61.8,0-112,50.2-112,112s50.2,112,112,112s112-50.2,112-112S317.8,144,\
 							256,144z M256,336c-44.2,0-80-35.8-80-80s35.8-80,80-80s80,35.8,80,80S300.2,336,256,336z'} />
 					</Svg>
@@ -243,13 +243,13 @@ class SunIcon extends React.Component {
 					style={{
 						position: 'absolute',
 						opacity: this.state.rayTimer.interpolate({
-							inputRange:  [0, 0.1, 0.15, 0.8, 0.9, 1],
+							inputRange: [0, 0.1, 0.15, 0.8, 0.9, 1],
 							outputRange: [0, 0, 1, 1, 0, 0],
 						}),
 					}}>
 					<Svg viewBox={'0 0 512 512'} height={this.props.size} width={this.props.size}>
 						<Path
-							fill={this.props.colour}
+							fill={this.props.color}
 							d={'M112,256c0-8.8-7.2-16-16-16H64c-8.8,0-16,7.2-16,16s7.2,16,16,16h32C104.8,272,\
 							112,264.8,112,256z'} />
 					</Svg>
@@ -263,13 +263,13 @@ class SunIcon extends React.Component {
 					style={{
 						position: 'absolute',
 						opacity: this.state.rayTimer.interpolate({
-							inputRange:  [0, 0.15, 0.2, 0.8, 0.9, 1],
+							inputRange: [0, 0.15, 0.2, 0.8, 0.9, 1],
 							outputRange: [0, 0, 1, 1, 0, 0],
 						}),
 					}}>
 					<Svg viewBox={'0 0 512 512'} height={this.props.size} width={this.props.size}>
 						<Path
-							fill={this.props.colour}
+							fill={this.props.color}
 							d={'M131.5,154.2c6.3,6.2,16.4,6.2,22.6,0c6.3-6.2,6.3-16.4,\
 							0-22.6l-22.6-22.6c-6.2-6.2-16.4-6.2-22.6,0c-6.2,6.2-6.2,16.4,0,22.6L131.5,154.2z'} />
 					</Svg>
@@ -283,13 +283,13 @@ class SunIcon extends React.Component {
 					style={{
 						position: 'absolute',
 						opacity: this.state.rayTimer.interpolate({
-							inputRange:  [0, 0.2, 0.25, 0.8, 0.9, 1],
+							inputRange: [0, 0.2, 0.25, 0.8, 0.9, 1],
 							outputRange: [0, 0, 1, 1, 0, 0],
 						}),
 					}}>
 					<Svg viewBox={'0 0 512 512'} height={this.props.size} width={this.props.size}>
 						<Path
-							fill={this.props.colour}
+							fill={this.props.color}
 							d={'M256,112c8.8,0,16-7.2,16-16V64c0-8.8-7.2-16-16-16s-16,7.2-16,16v32C240,104.8,\
 							247.2,112,256,112z'} />
 					</Svg>
@@ -303,13 +303,13 @@ class SunIcon extends React.Component {
 					style={{
 						position: 'absolute',
 						opacity: this.state.rayTimer.interpolate({
-							inputRange:  [0, 0.25, 0.3, 0.8, 0.9, 1],
+							inputRange: [0, 0.25, 0.3, 0.8, 0.9, 1],
 							outputRange: [0, 0, 1, 1, 0, 0],
 						}),
 					}}>
 					<Svg viewBox={'0 0 512 512'} height={this.props.size} width={this.props.size}>
 						<Path
-							fill={this.props.colour}
+							fill={this.props.color}
 							d={'M380.4,154.2l22.6-22.6c6.2-6.2,6.2-16.4,0-22.6s-16.4-6.2-22.6,0l-22.6,22.6c-6.2,\
 							6.2-6.2,16.4,0,22.6C364.1,160.4,374.2,160.4,380.4,154.2z'} />
 					</Svg>
@@ -324,13 +324,13 @@ class SunIcon extends React.Component {
 					style={{
 						position: 'absolute',
 						opacity: this.state.rayTimer.interpolate({
-							inputRange:  [0, 0.3, 0.35, 0.8, 0.9, 1],
+							inputRange: [0, 0.3, 0.35, 0.8, 0.9, 1],
 							outputRange: [0, 0, 1, 1, 0, 0],
 						}),
 					}}>
 					<Svg viewBox={'0 0 512 512'} height={this.props.size} width={this.props.size}>
 						<Path
-							fill={this.props.colour}
+							fill={this.props.color}
 							d={'M448,240h-32c-8.8,0-16,7.2-16,16s7.2,16,16,16h32c8.8,0,16-7.2,16-16S456.8,240,\
 							448,240z'} />
 					</Svg>
@@ -344,13 +344,13 @@ class SunIcon extends React.Component {
 					style={{
 						position: 'absolute',
 						opacity: this.state.rayTimer.interpolate({
-							inputRange:  [0, 0.35, 0.4, 0.8, 0.9, 1],
+							inputRange: [0, 0.35, 0.4, 0.8, 0.9, 1],
 							outputRange: [0, 0, 1, 1, 0, 0],
 						}),
 					}}>
 					<Svg viewBox={'0 0 512 512'} height={this.props.size} width={this.props.size}>
 						<Path
-							fill={this.props.colour}
+							fill={this.props.color}
 							d={'M380.5,357.8c-6.3-6.2-16.4-6.2-22.6,0c-6.3,6.2-6.3,16.4,0,22.6l22.6,22.6c6.2,6.2,\
 							16.4,6.2,22.6,0s6.2-16.4,0-22.6L380.5,357.8z'} />
 					</Svg>
@@ -364,13 +364,13 @@ class SunIcon extends React.Component {
 					style={{
 						position: 'absolute',
 						opacity: this.state.rayTimer.interpolate({
-							inputRange:  [0, 0.4, 0.45, 0.8, 0.9, 1],
+							inputRange: [0, 0.4, 0.45, 0.8, 0.9, 1],
 							outputRange: [0, 0, 1, 1, 0, 0],
 						}),
 					}}>
 					<Svg viewBox={'0 0 512 512'} height={this.props.size} width={this.props.size}>
 						<Path
-							fill={this.props.colour}
+							fill={this.props.color}
 							d={'M256,400c-8.8,0-16,7.2-16,16v32c0,8.8,7.2,16,16,16s16-7.2,16-16v-32C272,407.2,\
 							264.8,400,256,400z'} />
 					</Svg>
@@ -384,13 +384,13 @@ class SunIcon extends React.Component {
 					style={{
 						position: 'absolute',
 						opacity: this.state.rayTimer.interpolate({
-							inputRange:  [0, 0.45, 0.5, 0.8, 0.9, 1],
+							inputRange: [0, 0.45, 0.5, 0.8, 0.9, 1],
 							outputRange: [0, 0, 1, 1, 0, 0],
 						}),
 					}}>
 					<Svg viewBox={'0 0 512 512'} height={this.props.size} width={this.props.size}>
 						<Path
-							fill={this.props.colour}
+							fill={this.props.color}
 							d={'M131.6,357.8l-22.6,22.6c-6.2,6.2-6.2,16.4,0,22.6s16.4,6.2,22.6,\
 							0l22.6-22.6c6.2-6.3,6.2-16.4,0-22.6C147.9,351.6,137.8,351.6,131.6,357.8z'} />
 					</Svg>
@@ -403,13 +403,7 @@ class SunIcon extends React.Component {
 SunIcon.propTypes = {
 	size: PropTypes.number,
 	speed: PropTypes.number,
-	colour: PropTypes.string
-}
-
-SunIcon.defaultProps = {
-	size: 50,
-	speed: 1,
-	colour: 'black'
+	color: PropTypes.string
 }
 
 const SunIconAnimated = Animated.createAnimatedComponent(SunIcon)

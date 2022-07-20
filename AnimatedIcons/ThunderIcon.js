@@ -100,7 +100,7 @@ class ThunderIcon extends React.Component {
 				<View style={{ position: 'absolute' }}>
 					<Svg viewBox={'0 0 512 512'} height={this.props.size} width={this.props.size}>
 						<Path
-							fill={this.props.colour}
+							fill={this.props.color}
 							d={
 								'M400,64c-5.3,0-10.6,0.4-15.8,1.1C354.3,24.4,307.2,0,256,\
 								0s-98.3,24.4-128.2,65.1c-5.2-0.8-10.5-1.1-15.8-1.1C50.2,64,\
@@ -119,22 +119,22 @@ class ThunderIcon extends React.Component {
 					style={{
 						position: 'absolute',
 						opacity: this.state.timer.interpolate({
-							inputRange:  [0, 1, 2, 3, 4, 5, 6, 7],
+							inputRange: [0, 1, 2, 3, 4, 5, 6, 7],
 							outputRange: [0, 1, 0, 0, 1, 1, 0, 0],
 						}),
-						transform:[
+						transform: [
 							{
 								translateX: this.state.timer.interpolate({
-									inputRange:  [0, 5, 6, 7],
+									inputRange: [0, 5, 6, 7],
 									outputRange: [2 / 50 * this.props.size, -0.25 / 50 * this.props.size, -0.25 / 50 *
-									this.props.size, 2 / 50 * this.props.size],
+										this.props.size, 2 / 50 * this.props.size],
 								})
 							},
 							{
 								translateY: this.state.timer.interpolate({
-									inputRange:  [0, 5, 6, 7],
+									inputRange: [0, 5, 6, 7],
 									outputRange: [-4 / 50 * this.props.size, 0.25 / 50 * this.props.size, 0.25 / 50 *
-									this.props.size, -4 / 50 * this.props.size],
+										this.props.size, -4 / 50 * this.props.size],
 								})
 							},
 							{
@@ -147,7 +147,7 @@ class ThunderIcon extends React.Component {
 					}}>
 					<Svg viewBox={'0 0 512 512'} height={this.props.size} width={this.props.size}>
 						<Polygon
-							fill={this.props.colour}
+							fill={this.props.color}
 							class={'bolt'}
 							points={'192,352 224,384 192,480 288,384 256,352 288,256 '} />
 					</Svg>
@@ -160,13 +160,7 @@ class ThunderIcon extends React.Component {
 ThunderIcon.propTypes = {
 	size: PropTypes.number,
 	speed: PropTypes.number,
-	colour: PropTypes.string
-}
-
-ThunderIcon.defaultProps = {
-	size: 50,
-	speed: 1,
-	colour: 'black'
+	color: PropTypes.string
 }
 
 const ThunderIconAnimated = Animated.createAnimatedComponent(ThunderIcon)

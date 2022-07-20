@@ -40,17 +40,17 @@ class WindCloudIcon extends React.Component {
 		))
 
 		this.state.cloudTranslateX = this.state.cloudPushTimer.interpolate({
-			inputRange:  [0, 0.02, 0.6, 0.8, 1],
+			inputRange: [0, 0.02, 0.6, 0.8, 1],
 			outputRange: [-0.25 * this.props.size, 0, 0, -0.25 * this.props.size, -0.25 * this.props.size],
 		})
 
 		this.state.cloudScale = this.state.cloudPushTimer.interpolate({
-			inputRange:  [0, 0.02, 0.6, 0.8, 1],
+			inputRange: [0, 0.02, 0.6, 0.8, 1],
 			outputRange: [1.2, 1, 1, 1.2, 1.2],
 		})
 
 		this.state.windVal = this.state.windTimer.interpolate({
-			inputRange:  [0, 0.02, 0.6, 0.7, 1],
+			inputRange: [0, 0.02, 0.6, 0.7, 1],
 			outputRange: [0, 1, 1, 0, 0],
 		})
 	}
@@ -194,7 +194,7 @@ class WindCloudIcon extends React.Component {
 					}}>
 					<Svg viewBox={'0 0 512 512'} height={this.props.size} width={this.props.size}>
 						<Path
-							fill={this.props.colour}
+							fill={this.props.color}
 							d={'M417,166.1c-24-24.5-57.1-38.8-91.7-38.8c-34.6,0-67.7,14.2-91.7,38.8c-52.8,\
 							2.5-95,46.2-95,99.6c0,55,44.7,99.7,99.7,99.7c5.8,0,11.6-0.5,17.3-1.5c20.7,13.5,\
 							44.9,20.9,69.7,20.9c24.9,0,49.1-7.3,69.8-20.9c5.7,1,11.5,1.5,17.3,1.5c54.9,0,\
@@ -216,7 +216,7 @@ class WindCloudIcon extends React.Component {
 					}}>
 					<Svg viewBox={'0 0 512 512'} height={this.props.size} width={this.props.size}>
 						<Path
-							fill={this.props.colour}
+							fill={this.props.color}
 							d={'M16,256h64c8.8,0,16-7.2,16-16s-7.2-16-16-16H16c-8.8,0-16,7.2-16,16S7.2,256,16,256z'} />
 					</Svg>
 				</Animated.View>
@@ -231,7 +231,7 @@ class WindCloudIcon extends React.Component {
 					}}>
 					<Svg viewBox={'0 0 512 512'} height={this.props.size} width={this.props.size}>
 						<Path
-							fill={this.props.colour}
+							fill={this.props.color}
 							d={'M16,320h94c8.8,0,16-7.2,16-16s-7.2-16-16-16H16c-8.8,0-16,7.2-16,16S7.2,320,16,320z'} />
 					</Svg>
 				</Animated.View>
@@ -246,7 +246,7 @@ class WindCloudIcon extends React.Component {
 					}}>
 					<Svg viewBox={'0 0 512 512'} height={this.props.size} width={this.props.size}>
 						<Path
-							fill={this.props.colour}
+							fill={this.props.color}
 							d={'M144,352H16c-8.8,0-16,7.2-16,16s7.2,16,16,16h128c8.8,0,16-7.2,16-16S152.8,352,\
 							144,352z'} />
 					</Svg>
@@ -259,13 +259,7 @@ class WindCloudIcon extends React.Component {
 WindCloudIcon.propTypes = {
 	size: PropTypes.number,
 	speed: PropTypes.number,
-	colour: PropTypes.string
-}
-
-WindCloudIcon.defaultProps = {
-	size: 50,
-	speed: 1,
-	colour: 'black'
+	color: PropTypes.string
 }
 
 const WindCloudIconAnimated = Animated.createAnimatedComponent(WindCloudIcon)

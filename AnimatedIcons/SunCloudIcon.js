@@ -58,27 +58,27 @@ class SunCloudIcon extends React.Component {
 		))
 
 		this.state.rayOneScale = this.state.rayTimer.interpolate({
-			inputRange:  [0, 0.1, 0.15, 0.8, 0.9, 1],
+			inputRange: [0, 0.1, 0.15, 0.8, 0.9, 1],
 			outputRange: [0.5, 0.5, 1, 1, 0.5, 0.5],
 		})
 
 		this.state.rayTwoScale = this.state.rayTimer.interpolate({
-			inputRange:  [0, 0.15, 0.2, 0.8, 0.9, 1],
+			inputRange: [0, 0.15, 0.2, 0.8, 0.9, 1],
 			outputRange: [0.5, 0.5, 1, 1, 0.5, 0.5],
 		})
 
 		this.state.rayThreeScale = this.state.rayTimer.interpolate({
-			inputRange:  [0, 0.2, 0.25, 0.8, 0.9, 1],
+			inputRange: [0, 0.2, 0.25, 0.8, 0.9, 1],
 			outputRange: [0.5, 0.5, 1, 1, 0.5, 0.5],
 		})
 
 		this.state.rayFourScale = this.state.rayTimer.interpolate({
-			inputRange:  [0, 0.25, 0.3, 0.8, 0.9, 1],
+			inputRange: [0, 0.25, 0.3, 0.8, 0.9, 1],
 			outputRange: [0.5, 0.5, 1, 1, 0.5, 0.5],
 		})
 
 		this.state.rayFiveScale = this.state.rayTimer.interpolate({
-			inputRange:  [0, 0.3, 0.35, 0.8, 0.9, 1],
+			inputRange: [0, 0.3, 0.35, 0.8, 0.9, 1],
 			outputRange: [0.5, 0.5, 1, 1, 0.5, 0.5],
 		})
 	}
@@ -185,7 +185,7 @@ class SunCloudIcon extends React.Component {
 				<View style={{ position: 'absolute' }}>
 					<Svg viewBox={'0 0 512 512'} height={this.props.size} width={this.props.size}>
 						<Path
-							fill={this.props.colour}
+							fill={this.props.color}
 							d={
 								'M400,256c-5.3,0-10.6,0.4-15.8,1.1c-16.8-22.8-39-40.5-64.2-51.7c-10.5-4.6-21.5-8.1\
 								-32.9-10.4c-10.1-2-20.5-3.1-31.1-3.1c-45.8,0-88.4,19.6-118.2,52.9c-3.5,3.9-6.9,\
@@ -211,13 +211,13 @@ class SunCloudIcon extends React.Component {
 							scale: this.state.growTimer
 						}],
 						opacity: this.state.growTimer.interpolate({
-							inputRange:  [0.5, 1],
+							inputRange: [0.5, 1],
 							outputRange: [0, 1],
 						}),
 					}}>
 					<Svg viewBox={'0 0 512 512'} height={this.props.size} width={this.props.size}>
 						<Path
-							fill={this.props.colour}
+							fill={this.props.color}
 							d={'M127.8,259.1c3.1-4.3,6.5-8.4,10-12.3c-6-11.2-9.4-24-9.4-37.7c0-44.1,35.7-79.8,\
 							79.8-79.8c40,0,73.1,29.4,78.9,67.7c11.4,2.3,22.4,5.7,32.9,\
 							10.4c-0.4-29.2-12-56.6-32.7-77.3C266.1,109,238,97.4,208.2,97.4c-29.9,0-57.9,\
@@ -234,13 +234,13 @@ class SunCloudIcon extends React.Component {
 					style={{
 						position: 'absolute',
 						opacity: this.state.rayTimer.interpolate({
-							inputRange:  [0, 0.1, 0.15, 0.8, 0.9, 1],
+							inputRange: [0, 0.1, 0.15, 0.8, 0.9, 1],
 							outputRange: [0, 0, 1, 1, 0, 0],
 						}),
 					}}>
 					<Svg viewBox={'0 0 512 512'} height={this.props.size} width={this.props.size}>
 						<Path
-							fill={this.props.colour}
+							fill={this.props.color}
 							d={'M16,224h32c8.8,0,16-7.2,16-16s-7.2-16-16-16H16c-8.8,0-16,7.2-16,16S7.2,224,16,224z'} />
 					</Svg>
 				</Animated.View>
@@ -253,13 +253,13 @@ class SunCloudIcon extends React.Component {
 					style={{
 						position: 'absolute',
 						opacity: this.state.rayTimer.interpolate({
-							inputRange:  [0, 0.15, 0.2, 0.8, 0.9, 1],
+							inputRange: [0, 0.15, 0.2, 0.8, 0.9, 1],
 							outputRange: [0, 0, 1, 1, 0, 0],
 						}),
 					}}>
 					<Svg viewBox={'0 0 512 512'} height={this.props.size} width={this.props.size}>
 						<Path
-							fill={this.props.colour}
+							fill={this.props.color}
 							d={'M83.5,106.2c6.3,6.2,16.4,6.2,22.6,0c6.3-6.2,6.3-16.4,0-22.6L83.5,\
 							60.9c-6.2-6.2-16.4-6.2-22.6,0c-6.2,6.2-6.2,16.4,0,22.6L83.5,106.2z'} />
 					</Svg>
@@ -273,13 +273,13 @@ class SunCloudIcon extends React.Component {
 					style={{
 						position: 'absolute',
 						opacity: this.state.rayTimer.interpolate({
-							inputRange:  [0, 0.2, 0.25, 0.8, 0.9, 1],
+							inputRange: [0, 0.2, 0.25, 0.8, 0.9, 1],
 							outputRange: [0, 0, 1, 1, 0, 0],
 						}),
 					}}>
 					<Svg viewBox={'0 0 512 512'} height={this.props.size} width={this.props.size}>
 						<Path
-							fill={this.props.colour}
+							fill={this.props.color}
 							d={'M208,64c8.8,0,16-7.2,16-16V16c0-8.8-7.2-16-16-16s-16,7.2-16,16v32C195,56.8,\
 							199.2,64,208,64z'} />
 					</Svg>
@@ -293,13 +293,13 @@ class SunCloudIcon extends React.Component {
 					style={{
 						position: 'absolute',
 						opacity: this.state.rayTimer.interpolate({
-							inputRange:  [0, 0.25, 0.3, 0.8, 0.9, 1],
+							inputRange: [0, 0.25, 0.3, 0.8, 0.9, 1],
 							outputRange: [0, 0, 1, 1, 0, 0],
 						}),
 					}}>
 					<Svg viewBox={'0 0 512 512'} height={this.props.size} width={this.props.size}>
 						<Path
-							fill={this.props.colour}
+							fill={this.props.color}
 							d={'M332.4,106.2l22.6-22.6c6.2-6.2,6.2-16.4,0-22.6c-6.2-6.2-16.4-6.2-22.6,\
 							0l-22.6,22.6c-6.2,6.2-6.2,16.4,0,22.6S326.2,112.4,332.4,106.2z'} />
 					</Svg>
@@ -314,13 +314,13 @@ class SunCloudIcon extends React.Component {
 					style={{
 						position: 'absolute',
 						opacity: this.state.rayTimer.interpolate({
-							inputRange:  [0, 0.3, 0.35, 0.8, 0.9, 1],
+							inputRange: [0, 0.3, 0.35, 0.8, 0.9, 1],
 							outputRange: [0, 0, 1, 1, 0, 0],
 						}),
 					}}>
 					<Svg viewBox={'0 0 512 512'} height={this.props.size} width={this.props.size}>
 						<Path
-							fill={this.props.colour}
+							fill={this.props.color}
 							d={'M352,208c0,8.8,7.2,16,16,16h32c8.8,0,16-7.2,16-16s-7.2-16-16-16h-32C359.2,\
 							195,352,199.2,352,208z'} />
 					</Svg>
@@ -335,13 +335,7 @@ class SunCloudIcon extends React.Component {
 SunCloudIcon.propTypes = {
 	size: PropTypes.number,
 	speed: PropTypes.number,
-	colour: PropTypes.string
-}
-
-SunCloudIcon.defaultProps = {
-	size: 50,
-	speed: 1,
-	colour: 'black'
+	color: PropTypes.string
 }
 
 const SunCloudIconAnimated = Animated.createAnimatedComponent(SunCloudIcon)
