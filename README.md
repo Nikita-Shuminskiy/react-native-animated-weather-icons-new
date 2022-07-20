@@ -38,6 +38,7 @@ const App: () => Node = () => {
 
 ## Credit
 ### Forked from [react-native-animated-weather-icons](https://github.com/stan-sack/react-native-animated-weather-icons) by stan-sack
+### Forked from [https://github.com/CurtisTD/react-native-animated-weather-icons](https://github.com/CurtisTD/react-native-animated-weather-icons) by CurtisTD
 
 ### Changes since forking:
 * Created a single component to use rather than having to import each different component in. Now the name can be passed into said singular component.
