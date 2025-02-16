@@ -1,5 +1,5 @@
 
-import MatrixMath from 'react-native/Libraries/Utilities/MatrixMath'
+import MatrixMath from './matrixUtils'
 
 function transformMutateReturn(matrix, origin) {
 	const { x, y, z } = origin

@@ -1,14 +1,14 @@
 {
-  "name": "react-native-animated-weather-icons-fork",
+  "name": "react-native-animated-weather-icons-new",
   "version": "2.1.0",
-  "description": "This is a Fork from Animated Weather Icons for React Native from stan-sack & CurtisTD",
+  "description": "This is a Fork new from Animated Weather Icons for React Native from stan-sack & CurtisTD",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Adamy96/react-native-animated-weather-icons.git"
+    "url": "git+https://github.com/Nikita-Shuminskiy/react-native-animated-weather-icons-new.git"
   },
   "keywords": [
     "Animated",
@@ -30,7 +30,7 @@
   "homepage": "https://github.com/Adamy96/react-native-animated-weather-icons#readme",
   "dependencies": {
     "@types/react": "^18.0.15",
-    "react-native-svg": "^12.4.0"
+    "react-native-svg": "15.6.0"
   },
   "devDependencies": {
     "metro-react-native-babel-preset": "^0.66.0"

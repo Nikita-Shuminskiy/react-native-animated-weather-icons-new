@@ -6,11 +6,11 @@ Animated SVG Weather Icons for React Native
 
 ## Installation
 ````
-yarn add react-native-animated-weather-icons-fork
+yarn add react-native-animated-weather-icons-new
 ````
 or
 ````
-npm i react-native-animated-weather-icons-fork
+npm i react-native-animated-weather-icons-new
 ````
 
 ## Usage
