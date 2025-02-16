@@ -25,9 +25,9 @@
   "author": "Curtis Davis",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Adamy96/react-native-animated-weather-icons/issues"
+    "url": "https://github.com/Nikita-Shuminskiy/react-native-animated-weather-icons-new.git/issues"
   },
-  "homepage": "https://github.com/Adamy96/react-native-animated-weather-icons#readme",
+  "homepage": "https://github.com/Nikita-Shuminskiy/react-native-animated-weather-icons-new#readme",
   "dependencies": {
     "@types/react": "^18.0.15",
     "react-native-svg": "15.6.0"
